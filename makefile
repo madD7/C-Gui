@@ -4,7 +4,7 @@ OS = LINUX
 
 
 CC = gcc
-SRC_DIR = .
+SRC_DIR = Src
 INC_DIR = Inc
 OBJ_DIR = Obj
 CFLAGS = -Wall -g -Wl,--export-dynamic
@@ -22,8 +22,8 @@ CLEAR = clear
 endif
 
 
-SRCS = $(SRC_DIR)/main.c 
-OBJS = $(OBJ_DIR)/main.o
+SRCS = $(SRC_DIR)/main.c $(SRC_DIR)/error.c 
+OBJS = $(OBJ_DIR)/main.o $(OBJ_DIR)/error.o
 
 
 all: clean build
